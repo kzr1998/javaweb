@@ -13,14 +13,17 @@ import java.io.PrintWriter;
 public class jiafa extends HttpServlet {
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("utf-8");
+        resp.setContentType("text/html;charset=utf-8");
+        resp.setCharacterEncoding("utf-8");
+        PrintWriter out = resp.getWriter();
         String num1=req.getParameter("shu1");
         String num2=req.getParameter("shu2");
         int a=Integer.parseInt(num1);
         int b=Integer.parseInt(num2);
         int sum=a+b;
-        String html="<h1 style='color:red'>"+sum+"</h1><hr/>";
-        PrintWriter out=resp.getWriter();
-        out.println(html);//讲html发送回浏览器
+        out.print("计算结果为：");
+        out.print(sum);
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

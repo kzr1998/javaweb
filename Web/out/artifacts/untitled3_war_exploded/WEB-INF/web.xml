@@ -20,11 +20,11 @@
         <url-pattern>/computer</url-pattern>
     </servlet-mapping>
     <servlet>
-        <servlet-name>si</servlet-name>
+        <servlet-name>jiafa</servlet-name>
         <servlet-class>com.imooc.servlet.jiafa</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>si</servlet-name>
-        <url-pattern>/number</url-pattern>
+        <servlet-name>jiafa</servlet-name>
+        <url-pattern>/jiafa</url-pattern>
     </servlet-mapping>
 </web-app>
