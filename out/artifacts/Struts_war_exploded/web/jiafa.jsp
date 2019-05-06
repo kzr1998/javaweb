@@ -11,7 +11,7 @@
     <title>加法计算器</title>
 </head>
 <body>
-<form action="jiafa"method="post">
+<form action="jiafa">
     加数1：<input type="text" name="shu1"><br>
     加数2：<input type="text" name="shu2"><br>
     <input type="submit" value="确定">
